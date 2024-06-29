@@ -1,8 +1,11 @@
+import { Hero } from "./components/Hero";
+import { Navbar } from "./components/Navbar";
 function App() {
   return (
-    <>
-      <h1 className="text-3xl text-center">Sneakers landing page</h1>
-    </>
+    <div className="max-w-[1440px] m-auto bg-gradient-to-b from-[#FFFBEB] to-[#FFF]">
+      <Navbar />
+      <Hero />
+    </div>
   );
 }
 
