@@ -6,30 +6,39 @@ import featureIconThree from "../assets/feature-icon-3.svg";
 import featureBgOne from "../assets/feature-bg-symbol-1.svg";
 import featureBgTwo from "../assets/feature-bg-symbol-2.svg";
 import featureBgThree from "../assets/feature-bg-symbol-3.svg";
+import backgroundTriangle from "../assets/bg-triangle.png";
 
 export const Hero = () => {
   return (
     <section className="relative">
-      <div className="flex gap-20 h-full items-center p-20">
-        <div className="flex flex-col w-[714px] gap-12">
-          <h1 className="text-[72px] text-[#0F172A] font-bold leading-[79px]">
+      <img
+        className="absolute bottom-0 select-none max-lg:hidden"
+        src={backgroundTriangle}
+      />
+      <div className="relative flex gap-20 h-full items-center p-20 max-lg:flex-col max-lg:gap-8 max-lg:py-12 max-lg:px-4">
+        <img
+          className="absolute bottom-0 select-none lg:hidden"
+          src={backgroundTriangle}
+        />
+        <div className="flex flex-col max-w-[714px] gap-12 max-lg:gap-8">
+          <h1 className="text-[72px] text-[#0F172A] font-bold leading-[79px] max-lg:text-center max-lg:text-[56px]">
             Collectible Sneakers
           </h1>
-          <p className="text-lg">
+          <p className="text-lg max-lg:text-center">
             Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
             suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
             amet.
           </p>
-          <div className="flex gap-4 text-[#78350F]">
+          <div className="flex gap-4 text-[#78350F] max-lg:justify-center">
             <a
               href="#"
-              className="text-xl font-medium leading-6 px-8 py-4 border-current border-2 rounded-lg"
+              className="text-xl font-medium leading-6 px-8 py-4 border-current border-2 rounded-lg text-nowrap"
             >
               Sign up now
             </a>
             <a
               href="#"
-              className="flex gap-2 items-center w-fit text-base font-medium leading-6 px-3 py-2"
+              className="flex gap-2 items-center w-fit text-base font-medium leading-6 px-3 py-2 text-nowrap"
             >
               <img className="w-6" src={playIcon} alt="play icon" />
               <span className=""> Watch Demo</span>
@@ -37,13 +46,12 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[486px] select-none">
+        <div className="relative w-[486px] max-lg:w-[361px] select-none">
           <img src={heroSneakers} alt="Sneakers image" />
         </div>
       </div>
-
-      <div className="flex justify-center">
-        <div className="w-[1280px] flex gap-20 text-[#0F172A] ">
+      <div className="relative flex justify-center max-lg:bg-[#FEF3C7]">
+        <div className="w-[1280px] p-20 flex gap-20 text-[#0F172A] max-lg:flex-col [&>div]:max-lg:text-center [&>div]:max-lg:items-center max-lg:gap-8 max-lg:py-12 max-lg:px-4">
           <div className="flex flex-col gap-4">
             <div className="relative w-fit select-none">
               <img
