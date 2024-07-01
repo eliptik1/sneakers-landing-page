@@ -41,7 +41,7 @@ export const Hero = () => {
               className="flex gap-2 items-center w-fit text-base font-medium leading-6 px-3 py-2 text-nowrap hover:underline"
             >
               <img className="w-6" src={playIcon} alt="play icon" />
-              <span className=""> Watch Demo</span>
+              <span> Watch Demo</span>
             </a>
           </div>
         </div>

@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.feature-card {
+  @apply flex flex-col bg-[#0F172A] rounded-[10px] overflow-hidden shadow-[0px_0px_15px_0px_#FFFFFF12,0px_25px_50px_-12px_#FFFFFF40];
+}
+
+.feature-card-title {
+  @apply text-xl font-bold leading-[22px] mb-4 max-lg:text-2xl max-lg:text-left;
+}
+
+.feature-card-text {
+  @apply max-lg:text-lg max-lg:text-left;
+}
+
+.feature-card-button {
+  @apply text-xl leading-6 font-medium text-center flex items-center gap-4 justify-center p-4 mt-8 border-current border-2 rounded-lg text-nowrap hover:underline;
+}
