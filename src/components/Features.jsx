@@ -1,4 +1,5 @@
-import backlights from "../assets/Backlights.svg";
+import backlightsDesktop from "../assets/Backlights.svg";
+import backlightsMobile from "../assets/Backlights-mobile.svg";
 import featureCardOne from "../assets/feature-card-1.png";
 import featureCardTwo from "../assets/feature-card-2.png";
 import featureCardThree from "../assets/feature-card-3.png";
@@ -6,10 +7,15 @@ import shoppingCart from "../assets/shopping-cart.svg";
 
 export const Features = () => {
   return (
-    <section className="relative">
+    <section className="relative overflow-hidden">
       <img
-        className="absolute bottom-[56px] z-10 px-11"
-        src={backlights}
+        className="absolute z-10 left-0 right-0 top-[180px] p-0 w-full h-full lg:hidden"
+        src={backlightsMobile}
+        alt="backlights"
+      />
+      <img
+        className="absolute z-10 bottom-[56px] px-11 max-lg:hidden"
+        src={backlightsDesktop}
         alt="backlights"
       />
       <div className="relative bg-[#0F172A] flex flex-col gap-20 p-20 max-lg:px-4 max-lg:py-12 max-lg:gap-8">
