@@ -12,10 +12,10 @@ export const Hero = () => {
   return (
     <section className="relative">
       <img
-        className="absolute bottom-0 select-none max-lg:hidden"
+        className="absolute w-full h-full select-none max-lg:hidden"
         src={backgroundTriangle}
       />
-      <div className="relative flex gap-20 h-full items-center p-20 max-lg:flex-col max-lg:gap-8 max-lg:py-12 max-lg:px-4">
+      <div className="max-w-[1440px] m-auto relative flex justify-center gap-20 h-full items-center p-20 max-lg:flex-col max-lg:gap-8 max-lg:py-12 max-lg:px-4">
         <img
           className="absolute bottom-0 select-none lg:hidden"
           src={backgroundTriangle}

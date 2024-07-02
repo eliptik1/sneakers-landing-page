@@ -26,7 +26,7 @@ export const Navbar = () => {
   });
 
   return (
-    <header>
+    <header className="max-w-[1440px] m-auto">
       <nav className="flex items-center justify-between text-[#78350F] px-20 py-6 max-lg:p-4 ">
         <div
           onClick={toggleMenu}
