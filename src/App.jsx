@@ -2,6 +2,7 @@ import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { Features } from "./components/Features";
 import { JoinUs } from "./components/JoinUs";
+import { Reviews } from "./components/Reviews";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <Features />
       <JoinUs />
+      <Reviews />
     </div>
   );
 }

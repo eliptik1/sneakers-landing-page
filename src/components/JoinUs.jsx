@@ -56,7 +56,7 @@ export const JoinUs = () => {
         />
         <div className="relative">
           <img
-            className="max-lg:w-[50px] absolute z-30 bottom-3 left-16 lg:-bottom-10 lg:left-18"
+            className="max-lg:w-[50px] absolute z-30 bottom-3 left-16 lg:-bottom-10 lg:left-18 select-none"
             src={circle}
             alt="circle decoration"
           />
