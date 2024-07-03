@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*** FEATURE SECTION CARDS ***/
 .feature-card {
   @apply flex flex-col bg-[#0F172A] rounded-[10px] overflow-hidden shadow-[0px_0px_15px_0px_#FFFFFF12,0px_25px_50px_-12px_#FFFFFF40];
 }
@@ -23,6 +24,7 @@
   @apply text-xl leading-6 font-medium text-center flex items-center gap-4 justify-center p-4 mt-8 border-current border-2 rounded-lg text-nowrap hover:underline max-lg:text-base max-[500px]:text-xl;
 }
 
+/*** CAROUSEL ***/
 .review-card {
   @apply flex flex-col items-start p-8 max-lg:p-6 gap-4 bg-white rounded-[20px] shadow-[0px_0px_6px_0px_#00000012,0px_10px_15px_-3px_#0000001A] border border-[#E2E8F0];
   img {
@@ -43,4 +45,25 @@
 }
 .slick-track {
   @apply flex;
+}
+
+/*** COLLECTION SECTION BUTTONS ***/
+
+.collection-button {
+  @apply w-[256px] !flex text-xl items-center bg-white max-lg:shadow-[0px_0px_4px_0px_#00000012,0px_4px_6px_-1px_#0000001A] p-4 rounded-lg cursor-pointer shadow-none hover:shadow-[0px_0px_4px_0px_#00000012,0px_4px_6px_-1px_#0000001A];
+  .arrow-icon {
+    @apply opacity-0 w-6 ml-auto max-lg:hidden;
+  }
+  &:first-child {
+    @apply shadow-[0px_0px_4px_0px_#00000012,0px_4px_6px_-1px_#0000001A];
+    .arrow-icon {
+      @apply opacity-100;
+    }
+  }
+  &:hover .arrow-icon {
+    @apply opacity-100;
+  }
+  .collection-button-text {
+    @apply leading-6 font-medium whitespace-nowrap ml-4;
+  }
 }

@@ -33,43 +33,11 @@ export const Reviews = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 2200,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 1536,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 1280,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 2,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 768,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     },
-    //   },
-    // ],
   };
 
   return (
-    <section className="mb-20">
-      <div className="relative z-10 max-w-[1280px] mx-auto p-20 flex justify-between text-[#0F172A] max-lg:pt-12 max-lg:pb-8">
+    <section className="mb-20 max-lg:mb-12">
+      <div className="relative z-10 max-w-[1280px] mx-auto p-20 flex justify-between text-[#0F172A] max-lg:pt-12 max-lg:px-4 max-lg:pb-8">
         <h2 className="w-full text-[56px] font-bold leading-[61px] max-lg:text-center max-lg:text-[32px] max-lg:leading-8">
           Because they love us
         </h2>
