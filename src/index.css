@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 /*** FEATURE SECTION CARDS ***/
+
 .feature-card {
   @apply flex flex-col bg-[#0F172A] rounded-[10px] overflow-hidden shadow-[0px_0px_15px_0px_#FFFFFF12,0px_25px_50px_-12px_#FFFFFF40];
 }
@@ -25,6 +26,7 @@
 }
 
 /*** CAROUSEL ***/
+
 .review-card {
   @apply flex flex-col items-start p-8 max-lg:p-6 gap-4 bg-white rounded-[20px] shadow-[0px_0px_6px_0px_#00000012,0px_10px_15px_-3px_#0000001A] border border-[#E2E8F0];
   img {
@@ -66,4 +68,12 @@
   .collection-button-text {
     @apply leading-6 font-medium whitespace-nowrap ml-4;
   }
+}
+
+/*** FOOTER SECTION ***/
+.footer-main-link {
+  @apply hover:underline py-3 leading-[17.6px] font-medium;
+}
+.footer-link {
+  @apply hover:underline py-3 leading-[22.4px];
 }

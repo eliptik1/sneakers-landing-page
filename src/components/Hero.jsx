@@ -20,11 +20,11 @@ export const Hero = () => {
           className="absolute bottom-0 select-none lg:hidden"
           src={backgroundTriangle}
         />
-        <div className="flex flex-col max-w-[714px] gap-12 max-lg:gap-8">
-          <h1 className="text-[72px] text-[#0F172A] font-bold leading-[79px] max-lg:text-center max-lg:text-[56px]">
+        <div className="flex flex-col max-w-[714px] gap-8 max-lg:gap-8">
+          <h1 className="text-[72px] text-[#0F172A] font-bold leading-[79.2px] max-lg:text-center max-lg:text-[56px]">
             Collectible Sneakers
           </h1>
-          <p className="text-lg max-lg:text-center">
+          <p className="text-lg max-lg:text-center leading-[28.8px]">
             Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
             suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
             amet.
@@ -66,7 +66,7 @@ export const Hero = () => {
               />
             </div>
             <h4 className="text-xl font-medium leading-[22px]">Nibh viverra</h4>
-            <p>
+            <p className="text-lg leading-[28.8px]">
               Sit bibendum donec dolor fames neque vulputate non sit aliquam.
               Consequat turpis natoque leo, massa.
             </p>
@@ -85,7 +85,7 @@ export const Hero = () => {
               />
             </div>
             <h4 className="text-xl font-medium leading-[22px]">Cursus amet</h4>
-            <p>
+            <p className="text-lg leading-[28.8px]">
               Sit bibendum donec dolor fames neque vulputate non sit aliquam.
               Consequat turpis natoque leo, massa.
             </p>
@@ -106,7 +106,7 @@ export const Hero = () => {
             <h4 className="text-xl font-medium leading-[22px]">
               Ipsum fermentum
             </h4>
-            <p>
+            <p className="text-lg leading-[28.8px]">
               Sit bibendum donec dolor fames neque vulputate non sit aliquam.
               Consequat turpis natoque leo, massa.
             </p>

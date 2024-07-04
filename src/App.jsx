@@ -5,6 +5,7 @@ import { JoinUs } from "./components/JoinUs";
 import { Reviews } from "./components/Reviews";
 import { Collection } from "./components/Collection";
 import { WorldMap } from "./components/WorldMap";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Reviews />
       <Collection />
       <WorldMap />
+      <Footer />
     </div>
   );
 }
