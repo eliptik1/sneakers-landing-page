@@ -1,16 +1,20 @@
+import { useRef } from "react";
 import worldMapImage from "../assets/worldmap.svg";
 import worldMapMobile from "../assets/worldmap-mobile.svg";
 import mapEllipses from "../assets/map-ellipses.svg";
 import mapEllipsesMobile from "../assets/map-ellipses-mobile.svg";
 import mapTooltip from "../assets/map-tooltip.svg";
+import useScrollTriggeredCountUp from "./countUp";
 
 export const WorldMap = () => {
+  const ref = useRef(null);
+  const count = useScrollTriggeredCountUp(ref, 11658467, 2000); //
   return (
     <section className="flex w-full bg-[#78350F] h-[717px]">
       <div className="relative w-full flex justify-center items-center md:p-10 text-[#FFFBEB]">
         <div className="z-20 absolute font-bold">
           <p className="text-8xl leading-[105.6px] max-md:text-5xl max-md:leading-[52.8px]">
-            11,658,467
+            <div ref={ref}>{count}</div>
           </p>
           <p className="text-[56px] leading-[61.6px] text-center max-md:text-[32px] max-md:leading-[35.2px]">
             Shoes Collected
