@@ -25,16 +25,6 @@ export const Collection = () => {
     variableWidth: true,
   };
   return (
-    // <div>
-    //   <div className="h-[500px] bg-fuchsia-300"></div>
-    //   <div className="relative w-full h-[700px]">
-    //     <img
-    //       className="absolute  w-full h-full left-0 bottom-0 object-fill select-none "
-    //       src={bgWaves}
-    //     />
-    //   </div>
-    // </div>
-
     <section className="flex justify-center relative text-[#0F172A]">
       <img
         className="absolute w-full h-[70%] max-lg:h-[55%] bottom-0 select-none object-fill max-lg:object-cover"

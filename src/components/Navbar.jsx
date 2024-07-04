@@ -32,11 +32,11 @@ export const Navbar = () => {
           onClick={toggleMenu}
           className={`${
             isOpen ? "block" : "hidden"
-          } fixed z-20 inset-0 bg-gray-950/50 backdrop-blur-[2px]`}
+          } fixed z-50 inset-0 bg-gray-950/50 backdrop-blur-[2px]`}
         ></div>
         <div
           id="menu-drawer"
-          className="fixed z-20 right-0 w-[300px] top-0 bottom-0 bg-[#FEF3C7] transition-all duration-500 lg:hidden"
+          className="fixed z-50 right-0 w-[300px] top-0 bottom-0 bg-[#FEF3C7] transition-all duration-500 lg:hidden"
         >
           <button
             onClick={toggleMenu}
